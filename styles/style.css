@@ -67,7 +67,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 1200px;
+  width: 1140px;
   gap: 30px;
 }
 
@@ -77,18 +77,17 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
   margin-bottom: 16px;
+  max-inline-size: 711px;
+  aspect-ratio: 711 / 386;
   position: relative;
 }
 
 .result__video {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-  display: block;
 }
 
 .search-form {
@@ -229,8 +228,8 @@ ol {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 23px;
+  flex-shrink: 0;
   flex-grow: 1;
-  flex-shrink: 1;
 }
 
 .title {
